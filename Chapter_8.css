@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Cambria;
+    background-color: black;
+    color: aqua;
+    font-size: 30px;
+}
+.hadding
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: 4px yellow solid;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.topic
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: red solid 4px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.container
+{
+    background-color: red;
+    color: white;
+    height: 300px;
+    border: 3px white solid;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.box1
+{
+    background-color: green;
+    color: white;
+    width: 500px;
+    height: 20vh;
+    border: 3px white solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation-name: animate;            /*animation: animate 2s ease-in 1s 2 alternate-reverse;*/
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+@keyframes animate
+{
+    from
+    {
+        width: 200px;
+        height: 50px;
+    }
+    to
+    {
+        width: 500px;
+        height: 150px;
+    }
+}
+.box2
+{           /*you can give the value of rotate in terms of degree also*/
+    /* transform: translate(50px,100px) rotate(0.6turn);         content (loren10) moves towards right 50px and downward 100px
+    transform-origin: 100;          by default the origin is center */
+    text-align: center;
+    /* transform: scaleX(2);           height and width of the content will change
+    transform: scaleY(3);           transform: scale(2,3); is the same as both above */
+    transform: skew(7deg,3deg);
+}

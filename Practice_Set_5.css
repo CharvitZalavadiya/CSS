@@ -1,0 +1,36 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Cambria;
+    font-size:xx-large;
+    background-color: black;
+    color: aqua;
+}
+ul          /*01*/
+{
+    background-color: aqua;
+    background-size: 3vw;
+    color: black;
+    position: sticky;           /*02*/
+    top: 0px;           /*02*/
+}
+li
+{
+    margin: 10px;
+    padding: 50px;
+    width: 30vw;
+    display: inline;
+    font-size: 3vw;
+}
+.sticky         /*02*/
+{
+    background-color:red;
+    color: white;
+    min-height: 1000px;
+    position: relative;         /*04*/
+    z-index: 1;         /*04*/
+}

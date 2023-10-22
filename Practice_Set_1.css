@@ -1,0 +1,12 @@
+body
+{
+    background-color: black;
+    padding: 5%;
+    margin: 50px;
+}
+.red
+{
+    background-color: red;
+    color: white;
+    shape-margin: 10px;
+}

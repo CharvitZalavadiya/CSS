@@ -1,0 +1,30 @@
+body
+{
+    font-family: Cambria;
+    background-color: black;
+    color: aqua;
+}
+.hadding
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 130px;
+    margin: 0px;
+    padding: 0px;
+    border: yellow 2px solid;
+    border-radius: 50px;            /*set the corner of the border roundy with 30px radius*/
+    text-align: center;
+    box-sizing: content-box;            /*it works with the size of contant it can excide the width of the div box means the padding and the border are not included in the content box and its a default value*/
+}
+.topic          /*margin collapsing : here hadding and topic both have same margin if any case both have different margin then bigger one will be applied for ex. hadding(20px) and topic(10px) then between both there will be 20px margin and if both have 20px margin then between both there will be only 20px margin not 40px*/
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 125px;
+    margin: 0px;
+    padding: 0px;
+    border: yellow 2px solid;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;         /*this box will have 100% height and width means the padding and border is included in the size of contant box*/
+}

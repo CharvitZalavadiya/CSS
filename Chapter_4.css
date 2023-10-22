@@ -1,0 +1,45 @@
+body
+{
+    font-family: Cambria;
+    font-size:xx-large;
+    background-color: black;
+    color: aqua;
+}
+.hadding            /*for display:inline top-bottom margin,top-bottom padding,width,height are not allowed and this only takes the size according to the content means one box can be fit beside the other box here Chapter_4 and Fonts & Display came side by side for doing that display:inline must be applied to both*/
+{
+    color: white;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(79, 4, 154);
+    border: 2px yellow solid;
+    text-align: center;
+    margin: 20px 20px 10px 0px;         /*top and bottom margin has no impact while you are using the inline display*/
+    padding: 30px 20px;
+    display: inline-block;            /*you cannot use the inline with using the hadding tag like h1,h2,..*/
+    /*if you use the display:none then hadding will be removed inn this case but if you use visibility:hidden then hadding will not shown but it will be there in the webpage👇*/
+    visibility: hidden;
+}
+.topic          /*display:block is default and it takes the whole area of width,height,padding,margin and other box cannot comes to besides of that here Chapter_4 and Fonts & Display cannot comes side by side they both are saparated with the width,height,padding and margin between them*/
+{
+    color: white;           /*if you use both the display as inline-block then they both works as inline but you can set the width,height,margin,padding and margin will be applied which is bigger like hadding has 20px margin and topic has 10px margin then 20px will be applied to both*/
+    background-color: rgb(79, 4, 154);
+    width: 250px;
+    height: 40px;
+    border: yellow solid 2px;
+    text-align: center;
+    margin: 10px 0px 10px 20px;           /*gap between the hadding and topic is 40 px as hadding have 20px margin in right and topic have 20px margin in left*/
+    padding: 20px 50px;
+    display: inline-block;            /*<div> is a block element while <span> is a inline element*/
+}
+p
+{
+    text-decoration: underline;         /*to decorate the text*/
+    text-transform:uppercase;
+    line-height: 7;         /*it leaves the 7px from top and bottom*/
+    border: yellow solid 3px;
+    font-family: 'Times new roman', monospace;
+    font-size: 25px;
+    font-style:italic;
+    font-variant:normal;
+    font-weight:900;            /*for bold text*/
+}

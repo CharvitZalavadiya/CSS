@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;          /*when you use margin: auto then box will be come in the center*/
+    padding: 0;
+}
+body
+{
+    font-family: Cambria;
+    background-color: black;
+    color: aqua;
+    font-size: 30px;
+}
+.hadding
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: 4px yellow solid;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.topic
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: red solid 4px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.first
+{
+    background-color: aqua;
+    color: black;
+    height: 30vh;
+    width: 100%;
+    font-size: 20px;
+}
+.second
+{
+    background-color: red;
+    color: white;
+    font-size: 2em;         /*means the font size of the .second class content is 2 times its parent class .first class content = 40px*/
+    font-size: 2rem;         /*means the font size of the .second class content is 2 times html tag size by default it is 16px(html font size) = 32px*/
+    width: 30vw;            /*means the width size of the second class is 50% of the view port width means 50% of the screen*/
+    height: 20vh;            /*same as above here you can also use vw instead od vh in that case it will take 50% of the width as height also applicable to width*/
+    min-height: 5vh;           /*it works as restriction here height of the second will be 40% of the screen beacuse minimum height must be 40vh*/
+    max-height: 60vh;           /*height will be 40vh*/
+    min-width: 60vw;            /*same reason as height*/
+    max-width: 40vw;            /*though the max-width is 40vw , width will be 60vh beacuse min-width is 60 vw that means min has more priority then max*/
+
+}
+.third
+{
+    background-color: black;
+    color: yellow;
+    width: 100px;
+    height: 30px;
+    /* position: relative;         degault position is static */
+    /* left: 900px;            by using this property you can adjust the black box beside the red box */
+    /* top: 30px; */            /*top has more priority then bottom*/
+    /* bottom: 50px;           bottom: -50px == top: 50px reference line is the line where red box over */
+    position: absolute;         /*reference is parent non-static container here it is html box */
+    /* left: 0px; */
+    /* top: 0px; */
+    right: 0px;         /*when you are scrolling and if you want that any perticulat thing or box remain in the screen then yoy can use the sticky or fixed position*/
+    left: 0px;
+    bottom: 0px;            /*while scrolling any two or more box or contant overlaps and you want to any one of them should always looks infront then increase it's z-index: 1 or 2 or 3; which box has more z-index it will be 1st priority after that priority decreases inshort z-index specifies the stack order of the element*/
+}
+ul
+{
+    font-size: large;
+    background-color: green;
+    color:khaki;
+    list-style:disc inside;          /*list position*/
+    text-align: center;
+}

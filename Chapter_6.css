@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Cambria;
+    background-color: black;
+    color: aqua;
+    font-size: 30px;
+}
+.hadding
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: 4px yellow solid;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.topic
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: red solid 4px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.container
+{
+    background-color:cadetblue;
+    height: 200px;
+    display: flex;
+    /* flex-direction: column;         sets boxes vertically*/
+    /*flex-direction: column-reverse;         sets boxes vertically in reverse order */
+    flex-direction: row;         /*sets boxes horizontally*/
+    /* flex-direction: row-reverse;         sets boxes horizontally in reverse order */
+    flex-wrap: wrap;            /*uses for responsive website and left one will go down first*/
+    flex-wrap: wrap-reverse;            /*uses for responsive website and left one will remain at top after that 2nd row left on will come at top*/
+    justify-content: center;            /*all the boxes comes to center in horizontal direction*/
+    align-content: center;          /*it aligns the boxes at the center of the container box combined it has more priority then align-items*/
+    /* align-items: center;          it aligns the boxes at the center of the container box saperately */
+}
+.box1
+{
+    background-color: blue;
+    border: 3px solid white;
+    color: white;
+    width: 100px;
+    height: 100px;
+    /* float: right;
+    clear: left;            do the same work as clear: right for box2 */
+    /* order: 2;           box1 will be at the 2nd place after box2 and by default value of the order is 0 */
+    flex-grow: 3;           /*by default value of felx-grow is 0*/
+}
+.box2
+{
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+    width: 100px;
+    height: 100px;
+    /* float: right;
+    clear: right;           means no other element will float in the right of the box 2 so it will go downward
+    clear: both;            means no floating in right and left of box2 */
+    flex-grow: 1;           /*as we increase the flex-grow box size will increase wrt to other box*/
+}

@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+h3
+
+/* means wherever the h3 tag is used in code that all h3 tag will get yellow color */
+/* element selector */
+    {
+    color: yellow;
+}
+
+div
+
+/* means wherever the div tag is used in code that all div tag will get yellow color */
+/* element selector */
+    {
+    background-color: azure;
+    color: darkblue;
+}
+
+#green {
+    background-color: green;
+    color: black;
+}
+
+.st
+
+/* if we want to access by id then we have to use # sign but if we want to access by class then we have to access it by . sign */
+    {
+    background-color: pink;
+    color: black;
+    border: 4px solid green;
+}
+
+.nd {
+    background-color: pink;
+    color: black;
+    border: 4px dotted green;
+}
+
+.rd {
+    background-color: pink;
+    color: black;
+    border: 10px solid green;
+}
+
+/* .st,.nd,.rd          all the three class st nd rd can get the same style using this syntex you don't have to write saperately as above
+{
+    background-color: pink;
+    color: black;
+    border: 4px solid green;
+} */
+* {
+    margin: 0;
+    /* margin between two line exicution */
+    padding: 0;
+    /* Padding creates extra space within an element. In contrast, margin creates extra space around an element */
+}
+
+#first {
+    background-color: gold;
+    color: black;
+}
+
+.bg-pink {
+    background-color: rgb(197, 132, 143);
+    color: black;
+}

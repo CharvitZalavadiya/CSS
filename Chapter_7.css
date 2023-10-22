@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Cambria;
+    background-color: black;
+    color: aqua;
+    font-size: 30px;
+}
+.hadding
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: 4px yellow solid;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.topic
+{
+    color: white;
+    background-color: rgb(79, 4, 154);
+    width: 47vw;
+    height: 40px;
+    border: red solid 4px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    display: inline-block;
+}
+.container
+{
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    /* grid-column-gap: 5px; */
+    grid-template-columns: auto auto auto auto;           /*2 times auto means 2 columns will be created and auto means equal size distribution*/
+    /* grid-template-columns: 285px 470px auto; */
+    /* grid-template-rows: 285px 470px auto; */
+}
+.item
+{
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+}
+/*Media Query*/
+@media screen and (max-width: 1000px)           /*in responsive website as the screen width becomes 1000px then bgcolor of the container class will become aqua*/
+{
+    .container
+    {
+        background-color: aqua;
+    }    
+}

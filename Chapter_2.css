@@ -1,0 +1,39 @@
+/* it is using for the whole webpage */
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+    color: rgba(0, 255, 255, 0.819);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    padding: 10px;
+}
+.hadding
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color:rgba(0, 0, 0, 0.951);         /* here a=alpha which is for lightness */
+    height: 30px;           /* height of the background color (white) is 30 pixels */
+}
+.bgimage
+{
+    color: white;
+    width: 300px;            /*when you use the auto function then only give one parameter for better aspaact ratio mostly use the contain for batter image*/
+    height: 150px;
+    /* background-image: url('Screenshot (11).png'); */
+    /* background-repeat: repeat-x;            it uses to repeat the image in x axis only */
+    /* background-repeat: repeat-y;            it uses to repeat the image in y axis only */
+    /* background-repeat: no-repeat;            image will not repeat */
+    /* background-size: contain;          it uses to show the full image */
+    /* background-size: auto;           it takes the original size of image   */
+    /* background-size: cover;           it uses to cover the full area of the bgimage class   */
+    /* border: 3px solid cyan; */
+    /* background-position: top left 33%;          to set the image position */
+    /* background-attachment: fixed;           image will fixed in one dimention and text will move */
+    /* background-attachment: local;           image will not fixed  means that image will take the size of bgimage box */
+    /* background-attachment: scroll;          image will move when you scrolls */
+    background: rgb(5, 94, 5) url('Screenshot (11).png') scroll no-repeat top right;     /*all the properties written above can be applied in single line background command*/
+}
